@@ -1,0 +1,170 @@
+
+
+body {
+	background-image: url("background2.JPG");
+	font-family: helvetica, sans-serif;
+}
+
+.header {
+	text-align: center;
+	float: right;
+	width: 100%;
+	/* background: #4286f4; */
+	overflow: auto;
+}
+
+h1 {
+	text-align: center;
+	float: right;
+	width: 100%;
+	font-size: 28px;
+	font-family: Futura;
+	margin: 0px;
+	padding: 0.5em;
+	box-sizing: border-box;
+}
+
+.navBar {
+	display: flex;
+	flex-direction: column;
+	width: auto;
+	float: left;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+.navBar a {
+	display: block;
+	width: 60px;
+	background-color: LightGrey;
+	padding: 5px 15px;
+	text-align: center; 
+}
+
+a:hover {
+	color: hotpink;
+	background-color: grey;
+}
+
+.content {
+	float: right;
+	background: #95a2c1;
+	padding: 20px;
+	margin: auto;
+	width: 100%;
+	overflow: auto;
+	box-sizing: border-box
+}
+
+#imgBlock {
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	min-width: 50px;
+	border-radius: 20px;
+	box-shadow: 2px 2px 2px DarkSlateBlue;
+	padding: 2px;
+	margin-bottom: 10px;
+}
+
+#reading {
+	list-style-type: circle;
+}
+
+ol {
+	list-style-type: upper-roman;
+}
+
+/*contact page*/
+form {
+	width: 100%;
+	background: FloralWhite;
+	border: 18px solid lightgrey;
+	padding: 5px;
+	margin: auto;
+	text-align: center;
+	box-sizing: border-box;
+}
+
+fieldset {
+	border: none;
+	padding: 10px;
+}
+
+input {
+	border: none;
+	border-radius: 2px;
+	width: 90%;
+	height: 1.3em;
+	padding: 1em;
+	margin-bottom: 20px;
+	background-color: lavender;
+	box-sizing: border-box;
+}
+
+textarea {
+	border: none;
+	border-radius: 2px;
+	width: 90%;
+	height: 4em;
+	background-color: lavender;
+	resize: none;
+	overflow: auto;
+	box-sizing: border-box;
+}
+
+button {
+	
+	background-color: CornflowerBlue;
+	height: 2em;
+	width: 90%;
+	padding: 5px 20px;
+	text-align: center;
+	font-size: 18px;
+	border: none;
+	margin-top: 20px;
+	margin-bottom: 0px;
+	box-sizing: border-box;
+}
+
+.clearfix {
+	overflow: auto;
+}
+
+@media screen and (min-width: 768px) {
+	
+	h1 {
+		font-size: 35px;
+	}
+	.navBar {
+		flex-direction: row;
+		float: right;
+	}
+
+	#imgBlock {
+		flex-direction: row;
+		justify-content: space-around;
+	}
+
+	img {
+		max-width: auto;
+		max-height: 300px;
+	}
+	
+	form {
+		width: 325px;
+	}
+}
